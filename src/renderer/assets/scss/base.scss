@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.icon-arrow-down {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon_set.png) no-repeat;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.dropdown-menu {
+  display: none;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 1px 3px #e5e5e5;
+  -moz-box-shadow: 0 1px 3px #e5e5e5;
+  box-shadow: 0 1px 3px #e5e5e5;
+  z-index: 1000;
+}
