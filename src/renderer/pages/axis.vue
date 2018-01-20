@@ -8,10 +8,13 @@
   </div>
 </template>
 <style lang="css">
-
+.editor {
+  border: 1px solid #e7f6ff;;
+}
 </style>
 <script type="text/ecmascript-6">
   import { Array1D, ENV, Scalar } from 'deeplearn'
+  import Editor from '@/plugins/editor'
 
   export default {
     name: 'axis',
@@ -20,6 +23,10 @@
     },
     methods: {
       init () {
+        const editor = Editor.getEditor('canvasText', {})
+        console.log(editor)
+      },
+      test () {
         const math = ENV.math
         const a = Array1D.new([1, 2, 3])
         const b = Scalar.new(2)
