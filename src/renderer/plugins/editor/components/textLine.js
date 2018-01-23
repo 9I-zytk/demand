@@ -20,6 +20,7 @@ export default class TextLine {
     // 光标位置信息
     this.left = x
     this.bottom = y
+    this.top = y
     this.caret = 0
   }
   /*
@@ -70,5 +71,31 @@ export default class TextLine {
   */
   delCharacter () {
     return this.removeCharacterBeforeCaret()
+  }
+  /*
+  * 绘制
+  * @param {context} context - canvas.context 对象
+  * @return {TextLine}  返回当前对象
+  */
+  draw (context) {
+    context.save()
+    context.textAlign = 'start'
+    context.textBaseline = 'bottom'
+
+    context.strokeText(this.text, this.left, this.bottom)
+    context.fillText(this.text, this.left, this.bottom)
+
+    context.restore()
+    return this
+  }
+  /*
+  * 擦除编辑行
+  * @param {context} context - canvas.context 对象
+  * @param {imageData} imageData - canvas 保存的画布图像数据
+  * @return {TextLine}  返回当前对象
+  */
+  erase (context, imageData) {
+    context.putImageData(imageData, 0, 0)
+    return this
   }
 }
