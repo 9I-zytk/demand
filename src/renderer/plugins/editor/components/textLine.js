@@ -61,7 +61,7 @@ export default class TextLine {
   removeCharacterBeforeCaret () {
     if (this.caret === 0) return this
     this.text = this.text.substr(0, this.caret - 1) + this.text.substr(this.caret)
-    this.caret --
+    this.caret--
     return this
   }
   /*

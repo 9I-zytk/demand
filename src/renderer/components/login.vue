@@ -22,7 +22,7 @@
         <input type="button" value="立即登录" class="submit_btn" @click="login"/>
       </dd>
       <dd>
-        <p>Copyright 武汉镝次元数据科技有限公司 © 2016 </p>
+        <p>Copyright 武汉数趣科技有限公司 © 2019 </p>
         <p>鄂ICP备15019128号-3</p>
       </dd>
     </dl>

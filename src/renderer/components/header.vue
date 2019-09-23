@@ -16,7 +16,7 @@
             <span class="top-num have">0</span>
           </a>
         </li>
-        <li class="top-info-item" @click="helpClick">
+        <li class="top-info-item" @click="helpClick" v-if="false">
           <div class="dropdown" :class ='{"open" : isOpen}'>
             <a href="#" class="top-btn">
               <span class="fl text-normal">帮助与文档</span>

@@ -3,7 +3,7 @@
  * @Date 2018/1/23
  */
 'use strict'
-import TextLine from 'textLine'
+// import TextLine from 'textLine'
 /*
 * 编辑器 编辑行
 * @class Paragraph

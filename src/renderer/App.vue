@@ -5,27 +5,27 @@
 </template>
 
 <script type="text/ecmascript-6">
-/* eslint-disable no-unused-vars */
-import 'particles.js'
-import setting from './particles.json'
+  /* eslint-disable no-unused-vars */
+  import 'particles.js'
+  import setting from './particles.json'
 
-export default {
-  name: 'demand',
-  mounted: function () {
-    this.initBackground()
-  },
-  methods: {
-    initBackground () {
-      const params = setting
-      window.particlesJS('app', params)
-    }
-  },
-  data () {
-    return {
-      msg: 'hello vue'
+  export default {
+    name: 'demand',
+    mounted: function () {
+      this.initBackground()
+    },
+    methods: {
+      initBackground () {
+        const params = setting
+        window.particlesJS('app', params)
+      }
+    },
+    data () {
+      return {
+        msg: 'hello vue'
+      }
     }
   }
-}
 </script>
 
 <style lang='css'>

@@ -1,5 +1,5 @@
 'use strict'
-/* eslint-disable space-before-function-paren */
+
 import { app, BrowserWindow, Menu } from 'electron'
 
 /**
@@ -7,22 +7,24 @@ import { app, BrowserWindow, Menu } from 'electron'
  * https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-static-assets.html
  */
 if (process.env.NODE_ENV !== 'development') {
-  global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\') // eslint-disable-line{{/if_eq}}
+  global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\')
 }
 
 let mainWindow
-const winURL = process.env.NODE_ENV === 'development' ? `http://localhost:9090` : `file://${__dirname}/index.html`
+const winURL = process.env.NODE_ENV === 'development'
+  ? `http://localhost:9008`
+  : `file://${__dirname}/index.html`
 
-function createWindow() {
+function createWindow () {
   /**
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    title: '需求管理系统',
+    title: '试验田',
     show: false,
     height: 600,
     useContentSize: true,
-    width: 800,
+    width: 1000,
     frame: false
   })
   mainWindow.maximize()
@@ -37,7 +39,8 @@ function createWindow() {
   })
 }
 
-app.on('ready', function() {
+// app.on('ready', createWindow)
+app.on('ready', function () {
   // const menu = Menu.buildFromTemplate(mainMenu.template)
   Menu.setApplicationMenu(null)
   createWindow()
@@ -65,10 +68,12 @@ app.on('activate', () => {
 
 /*
 import { autoUpdater } from 'electron-updater'
+
 autoUpdater.on('update-downloaded', () => {
   autoUpdater.quitAndInstall()
 })
+
 app.on('ready', () => {
   if (process.env.NODE_ENV === 'production') autoUpdater.checkForUpdates()
 })
-*/
+ */
