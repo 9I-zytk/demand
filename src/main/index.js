@@ -22,12 +22,12 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     title: '试验田',
     show: false,
-    height: 600,
+    height: 768,
     useContentSize: true,
-    width: 1000,
+    width: 1200,
     frame: false
   })
-  mainWindow.maximize()
+  // mainWindow.maximize()
   mainWindow.loadURL(winURL)
 
   mainWindow.once('ready-to-show', () => {

@@ -2,15 +2,15 @@
   <div class="header">
     <div class="top-console">
       <div class="top-head">
-        <a href="/" class="top-logo">
+        <a href="#" class="top-logo">
           <span><img src="../assets/logo.png" width="20" height="20"/></span>
         </a>
-        <a href="index.html" class="top-home-link top-btn text-center"><span>管理控制台</span></a>
+        <a href="#" class="top-home-link top-btn text-center"><span>管理控制台</span></a>
       </div>
     </div>
     <div class="top-info">
       <ul class="fr">
-        <li class="dropdown top-notice top-btn">
+        <li class="dropdown top-notice top-btn" v-if="false">
           <a href="#" class="dropdown-toggle">
             <span class="icon-notice"></span>
             <span class="top-num have">0</span>
@@ -48,7 +48,7 @@
 </style>
 <script type="text/ecmascript-6">
   export default {
-    name: 'header',
+    name: 'header-bar',
     methods: {
       helpClick (menu) {
         this.isOpen = !this.isOpen

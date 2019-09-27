@@ -33,6 +33,10 @@ export default new Router({
         path: '',
         name: 'dashboard',
         component: require('@/pages/dashboard').default
+      }, {
+        path: 'arrowDemo',
+        name: 'arrow',
+        component: require('@/pages/arrowDemo').default
       }
     ]
   }, {

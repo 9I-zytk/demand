@@ -121,7 +121,7 @@
             title: 'D3',
             icon: authorIcon,
             route: {
-              name: 'planeWar',
+              name: 'arrow',
               params: { }
             }
           }, {
@@ -134,10 +134,10 @@
             }
           }, {
             id: 100303,
-            title: '3D',
+            title: 'canvasArrow',
             icon: authorIcon,
             route: {
-              name: 'planeWar',
+              name: 'arrow',
               params: { }
             }
           }]
