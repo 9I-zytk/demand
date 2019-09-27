@@ -25,7 +25,7 @@ export default class ArrowDraw {
     this.drawArrow(this.canvas, this.fromDiv, this.toDiv)
   }
   canvasDraw (p1, p2) { // fromx, fromy, tox, toy
-    let headlen = this.size0
+    let headlen = this.size
     let angle = Math.atan2(p2.y - p1.y, p2.x - p1.x)
     let ctx = this.context
     ctx.beginPath()
